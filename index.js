@@ -3,5 +3,10 @@ function takeANumber(current,name) {
 }
 function nowServing(katzDeliLine) {
   var first = katzDeliLine[0];
-  katzDeliLine.pop(0)
+  if (katzDeliLine.length > 0) {
+    katzDeliLine.shift(0);
+    return first;
+  } else {
+    return ""
+  }
 }
