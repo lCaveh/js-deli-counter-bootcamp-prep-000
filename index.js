@@ -1,5 +1,6 @@
 function takeANumber(current,name) {
-  return ("Welcome, " + name + ". You are number " + (current +1) + " in line.");
+  current.push(name);
+  return ("Welcome, " + name + ". You are number " + (current.index +1) + " in line.");
 }
 function nowServing(katzDeliLine) {
   var first = katzDeliLine[0];
